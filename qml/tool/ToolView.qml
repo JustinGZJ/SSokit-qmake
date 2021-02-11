@@ -19,6 +19,7 @@ Rectangle{
         width: implicitWidth
         height: implicitHeight
         anchors.top: parent.top
+        anchors.topMargin: 15
         anchors.horizontalCenter: parent.horizontalCenter
         currentIndex: view.currentIndex
         Widgets.TopButton {

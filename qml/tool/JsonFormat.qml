@@ -25,6 +25,7 @@ ColumnLayout{
     }
     StackLayout{
         id:contentLayout
+
         currentIndex: tabBar.currentIndex
         JsonFormatView{
             id:jsonFormatView
@@ -34,18 +35,15 @@ ColumnLayout{
         }
     }
     RowLayout{
-        height: 10
-        Layout.preferredHeight: 20
+        Layout.preferredHeight: 50
         Layout.leftMargin: 20
         Layout.rightMargin: 20
 
         Button{
-            height: 10
             text: "格式化"
-            font.pixelSize: 10
             background: Rectangle {
                 implicitWidth: 100
-                implicitHeight: parent.height
+                implicitHeight: 40
                 opacity: enabled ? 1 : 0.3
                 border.color: "#37474f"
                 border.width: 1
